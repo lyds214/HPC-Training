@@ -37,7 +37,7 @@
     <main id="main" class="content">
       <h1 id="understanding-the-pace-ecosystem">Understanding the PACE Ecosystem</h1>
 
-<p>You already connected over VPN and logged into OnDemand and SSH. Before you request access or submit a job, it helps to know what you actually logged into. PACE is not one machine. It is an umbrella covering several clusters, a support team, and a software stack, and understanding how the pieces fit together will save you a support ticket later.</p>
+<p>Congrats! You already connected over VPN and logged into OnDemand and SSH. Before you request access or submit a job, it helps to know what you actually logged into. PACE is not one machine. It is an umbrella covering several clusters, a support team, and a software stack, and understanding how the pieces fit together will save you a support ticket later.</p>
 
 <p>This page covers what PACE is, how its clusters differ, who can request access to each one, and the basic vocabulary (head node, compute node, Slurm) you will need before submitting a job.</p>
 
@@ -48,16 +48,16 @@
 <p>PACE stands for Partnership for an Advanced Computing Environment. It is Georgia Tech’s research computing organization, and it provides three things:</p>
 
 <ul>
-  <li><strong>Compute and storage.</strong> CPU and GPU capacity, plus individual and shared project storage on filesystems built for the kind of I/O research jobs need.</li>
-  <li><strong>A support team.</strong> The Research Computing Facilitation team runs consultations, workshops, and email support.</li>
-  <li><strong>A software stack.</strong> Python, R, Julia, Jupyter, Anaconda, and a long list of licensed and open-source packages, already built so you are not compiling everything from scratch.</li>
+  <li><strong>Compute and storage -</strong> Access to CPU and GPU resources, along with personal and shared project storage designed to handle the I/O demands of research workloads.</li>
+  <li><strong>A support team -</strong> The Research Computing Facilitation team provides consultations, workshops, and email support to help researchers get the most out of available resources.</li>
+  <li><strong>A software stack -</strong> Python, R, Julia, Jupyter, Anaconda, and a wide range of licensed and open-source software are already installed and configured, so you can spend less time compiling and more time working on your research.</li>
 </ul>
 
 <hr />
 
 <h2 id="three-clusters-three-purposes">Three clusters, three purposes</h2>
 
-<p>PACE runs several distinct clusters. They share the same underlying technology (Slurm, CPUs and GPUs, Infiniband, NVMe storage), but each one exists for a different reason and has different rules about who can use it.</p>
+<p>PACE operates several distinct computing clusters. While they use the same core technologies, each cluster is designed for a different purpose and has its own eligibility and access requirements.</p>
 
 <table>
   <thead>
@@ -94,11 +94,13 @@
   </tbody>
 </table>
 
-<p>A fourth cluster, Hive, was decommissioned in September 2025 and no longer appears in current PACE documentation.</p>
+<blockquote>
+  <p>A fourth cluster, Hive, was decommissioned in September 2025 and no longer appears in current PACE documentation.</p>
+</blockquote>
 
-<p>This training track is built around ICE. It is the cluster course instructors request on behalf of their classes, it costs nothing to use, and it is where you will run the exercises in the rest of this guide. What you learn here (Slurm, modules, storage layout) carries over directly to Phoenix or Firebird if you later work with a research group that uses one of those instead, since all three clusters run the same Slurm-based scheduling underneath.</p>
+<p>This training track is built around ICE. It is the cluster that course instructors request on behalf of their classes. It costs nothing to use, and it is where you will run the exercises in the rest of this guide. What you learn here carries over directly to Phoenix or Firebird if you later work with a research group that uses one of those instead, since all three clusters run the same Slurm-based scheduling underneath.</p>
 
-<p>ICE has grown quickly. In Fall 2022 it supported about 991 users across 24 courses. By Fall 2025 that had grown to over 3,100 users across 100 courses. You are joining an environment that gets active, ongoing use, not a system nobody touches.</p>
+<p>ICE has grown quickly. In Fall 2022, it supported about 991 users across 24 courses. By Fall 2025, that had grown to over <strong>3,100 users</strong> across <strong>100 courses</strong>. You are joining an environment that gets active, ongoing use, not a system nobody touches.</p>
 
 <hr />
 
@@ -107,12 +109,12 @@
 <p>Access requests differ by cluster, and it matters who does the requesting:</p>
 
 <ul>
-  <li><strong>Phoenix.</strong> A PI or faculty sponsor fills out the PACE Account Creation Request Form on behalf of their students, researchers, or staff. Individual students do not self-request.</li>
-  <li><strong>Firebird.</strong> Access is arranged directly with PACE by emailing <code class="language-plaintext highlighter-rouge">pace-support@oit.gatech.edu</code>, since CUI and ITAR projects carry extra requirements.</li>
-  <li><strong>ICE.</strong> The course instructor applies to use ICE for their class. Students should not fill out the ICE application themselves. Instructors outside the College of Computing use the standard ICE application; instructors teaching within the College of Computing go through the TSO’s instructional team instead.</li>
+  <li><strong>Phoenix -</strong> A PI or faculty sponsor fills out the PACE Account Creation Request Form on behalf of their students, researchers, or staff. Individual students do not self-request.</li>
+  <li><strong>Firebird -</strong> Access is arranged directly with PACE by emailing <code class="language-plaintext highlighter-rouge">pace-support@oit.gatech.edu</code> since CUI and ITAR projects carry extra requirements.</li>
+  <li><strong>ICE -</strong> The course instructor applies to use ICE for their class. Students should not fill out the ICE application themselves. Instructors outside the College of Computing use the standard ICE application; instructors teaching within the College of Computing go through the TSO’s instructional team instead.</li>
 </ul>
 
-<p>If you are a student reading this, the practical takeaway is simple: your instructor or course staff requested the ICE allocation your class uses, and you were added to it. If you are setting up a new course or workshop on ICE yourself, see <strong>104, Requesting ICE Access</strong> for that process.</p>
+<p>If you are a student reading this, the practical takeaway is simple: your instructor or course staff requested the ICE allocation your class uses, and you were added to it. If you are setting up a new course or workshop on ICE yourself, see <strong>104 - Requesting ICE Access</strong> for that process.</p>
 
 <hr />
 
