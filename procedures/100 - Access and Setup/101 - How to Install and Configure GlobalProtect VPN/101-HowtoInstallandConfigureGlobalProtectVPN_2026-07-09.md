@@ -115,5 +115,3 @@ This guide provides a comprehensive walkthrough for downloading, installing, and
 `launchctl unload /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*​`
 > - To launch the client again: 
 `launchctl load /Library/LaunchAgents/com.paloaltonetworks.gp.pangp*`
-
-
