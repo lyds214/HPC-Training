@@ -36,15 +36,6 @@
     </aside>
     <main id="main" class="content">
       <h1 id="understanding-the-pace-ecosystem">Understanding the PACE Ecosystem</h1>
-
-<p>Congrats! You already connected over VPN and logged into OnDemand and SSH. Before you request access or submit a job, it helps to know what you actually logged into. PACE is not one machine. It is an umbrella covering several clusters, a support team, and a software stack, and understanding how the pieces fit together will save you a support ticket later.</p>
-
-<p>This page covers what PACE is, how its clusters differ, who can request access to each one, and the basic vocabulary (head node, compute node, Slurm) you will need before submitting a job.</p>
-
-<hr />
-
-<h2 id="what-pace-is">What PACE is</h2>
-
 <p>PACE stands for Partnership for an Advanced Computing Environment. It is Georgia Tech’s research computing organization, and it provides three things:</p>
 
 <ul>
@@ -56,6 +47,7 @@
 <hr />
 
 <h2 id="three-clusters-three-purposes">Three clusters, three purposes</h2>
+<p><img src="/HPC-Training/assets/img/clusterFlow.png" alt="Cluster Flow" /></p>
 
 <p>PACE operates several distinct computing clusters. While they use the same core technologies, each cluster is designed for a different purpose and has its own eligibility and access requirements.</p>
 
@@ -95,7 +87,7 @@
 </table>
 
 <blockquote>
-  <p>A fourth cluster, Hive, was decommissioned in September 2025 and no longer appears in current PACE documentation.</p>
+  <p><strong>A fourth cluster, Hive, was decommissioned in September 2025 and no longer appears in current PACE documentation.</strong></p>
 </blockquote>
 
 <p>This training track is built around ICE. It is the cluster that course instructors request on behalf of their classes. It costs nothing to use, and it is where you will run the exercises in the rest of this guide. What you learn here carries over directly to Phoenix or Firebird if you later work with a research group that uses one of those instead, since all three clusters run the same Slurm-based scheduling underneath.</p>
@@ -105,16 +97,15 @@
 <hr />
 
 <h2 id="who-requests-access-and-how">Who requests access, and how</h2>
-
-<p>Access requests differ by cluster, and it matters who does the requesting:</p>
+<blockquote>
+  <p><strong>If you are a student:</strong> your instructor or course staff requested the ICE allocation your class uses, and you were added to it. If you are setting up a new course or workshop on ICE yourself, see this link for that process.</p>
+</blockquote>
 
 <ul>
   <li><strong>Phoenix -</strong> A PI or faculty sponsor fills out the PACE Account Creation Request Form on behalf of their students, researchers, or staff. Individual students do not self-request.</li>
   <li><strong>Firebird -</strong> Access is arranged directly with PACE by emailing <code class="language-plaintext highlighter-rouge">pace-support@oit.gatech.edu</code> since CUI and ITAR projects carry extra requirements.</li>
   <li><strong>ICE -</strong> The course instructor applies to use ICE for their class. Students should not fill out the ICE application themselves. Instructors outside the College of Computing use the standard ICE application; instructors teaching within the College of Computing go through the TSO’s instructional team instead.</li>
 </ul>
-
-<p>If you are a student reading this, the practical takeaway is simple: your instructor or course staff requested the ICE allocation your class uses, and you were added to it. If you are setting up a new course or workshop on ICE yourself, see <strong>104 - Requesting ICE Access</strong> for that process.</p>
 
 <hr />
 
@@ -133,17 +124,17 @@
 
 <p>Unlike your laptop, a cluster is shared by dozens, sometimes hundreds, of people at once. Slurm is the workload manager that arbitrates that sharing fairly. You tell it what you need (CPUs, memory, wall time, GPUs if any), and it holds your job until that exact set of resources is free, then runs it for exactly as long as you asked.</p>
 
-<p>That is the whole idea in one sentence, and it is why submitting a job feels different from just running a script locally. The mechanics of actually writing and submitting a Slurm job start in <strong>200, Running Your First Job</strong>; this page exists so the vocabulary (head node, compute node, scheduler, queue) is already familiar by the time you get there.</p>
+<p>That is the whole idea in one sentence, and it is why submitting a job feels different from just running a script locally. The mechanics of actually writing and submitting a Slurm job start in <strong>200 - Running Your First Job</strong>; this page exists so the vocabulary (head node, compute node, scheduler, queue) is already familiar by the time you get there.</p>
 
 <hr />
 
 <h2 id="next-step">Next step</h2>
 
 <ul>
-  <li>Need to request an ICE seat for a course? See <strong>104, Requesting ICE Access</strong>.</li>
-  <li>Want a broader tour of PACE, including workshops and official docs? See <strong>105, Orientation Resources</strong>.</li>
-  <li>Ready to size and submit your first job? Continue to <a href="https://github.com/Human-Augment-Analytics/HPC-Training/tree/main/procedures/200%20-%20Running%20Your%20First%20Job">200, Running Your First Job</a>.</li>
-  <li>Stuck on something this page did not cover? See <a href="https://github.com/Human-Augment-Analytics/HPC-Training/tree/main/procedures/300%20-%20Storage%2C%20Troubleshooting%20%26%20Support/305%20-%20Getting%20Help">305, Getting Help</a>.</li>
+  <li>Need to request an ICE seat for a course? See <strong>104 - Requesting ICE Access</strong>.</li>
+  <li>Want a broader tour of PACE, including workshops and official docs? See <strong>105 - Orientation Resources</strong>.</li>
+  <li>Ready to size and submit your first job? Continue to <a href="https://github.com/Human-Augment-Analytics/HPC-Training/tree/main/procedures/200%20-%20Running%20Your%20First%20Job">200 - Running Your First Job</a>.</li>
+  <li>Stuck on something this page did not cover? See <a href="https://github.com/Human-Augment-Analytics/HPC-Training/tree/main/procedures/300%20-%20Storage%2C%20Troubleshooting%20%26%20Support/305%20-%20Getting%20Help">305 - Getting Help</a>.</li>
 </ul>
 
 <blockquote>
