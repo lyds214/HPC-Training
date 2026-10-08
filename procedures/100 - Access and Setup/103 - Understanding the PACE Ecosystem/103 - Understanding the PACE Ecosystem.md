@@ -26,14 +26,11 @@ PACE operates several distinct computing clusters. While they use the same core 
 
 This training track is built around ICE. It is the cluster that course instructors request on behalf of their classes. It costs nothing to use, and it is where you will run the exercises in the rest of this guide. What you learn here carries over directly to Phoenix or Firebird if you later work with a research group that uses one of those instead, since all three clusters run the same Slurm-based scheduling underneath.
 
-ICE has grown quickly. In Fall 2022, it supported about 991 users across 24 courses. By Fall 2025, that had grown to over **3,100 users** across **100 courses**. You are joining an environment that gets active, ongoing use, not a system nobody touches.
-
 ---
 
 ## Who requests access, and how
-> **If you are a student:** your instructor or course staff requested the ICE allocation your class uses, and you were added to it. If you are setting up a new course or workshop on ICE yourself, see this link for that process.
 
-- **Phoenix -** A PI or faculty sponsor fills out the PACE Account Creation Request Form on behalf of their students, researchers, or staff. Individual students do not self-request.
+- **Phoenix -** A PI or faculty sponsor fills out the [PACE Account Creation Request Form](https://pace.gatech.edu/ice-cluster/) on behalf of their students, researchers, or staff. Individual students do not self-request.
 - **Firebird -** Access is arranged directly with PACE by emailing `pace-support@oit.gatech.edu` since CUI and ITAR projects carry extra requirements.
 - **ICE -** The course instructor applies to use ICE for their class. Students should not fill out the ICE application themselves. Instructors outside the College of Computing use the standard ICE application; instructors teaching within the College of Computing go through the TSO's instructional team instead.
 
@@ -52,15 +49,7 @@ Once you are logged in, you are actually touching two different kinds of machine
 
 Unlike your laptop, a cluster is shared by dozens, sometimes hundreds, of people at once. Slurm is the workload manager that arbitrates that sharing fairly. You tell it what you need (CPUs, memory, wall time, GPUs if any), and it holds your job until that exact set of resources is free, then runs it for exactly as long as you asked.
 
-That is the whole idea in one sentence, and it is why submitting a job feels different from just running a script locally. The mechanics of actually writing and submitting a Slurm job start in **200 - Running Your First Job**; this page exists so the vocabulary (head node, compute node, scheduler, queue) is already familiar by the time you get there.
+That is the whole idea in one sentence, and it is why submitting a job feels different from just running a script locally. The mechanics of actually writing and submitting a Slurm job start in [**200 - Running Your First Job**]({{ '/procedures/200 - Running Your First Job/' | relative_url }}); this page exists so the vocabulary (head node, compute node, scheduler, queue) is already familiar by the time you get there.
 
----
-
-## Next step
-
-- Need to request an ICE seat for a course? See **104 - Requesting ICE Access**.
-- Want a broader tour of PACE, including workshops and official docs? See **105 - Orientation Resources**.
-- Ready to size and submit your first job? Continue to [200 - Running Your First Job](https://github.com/Human-Augment-Analytics/HPC-Training/tree/main/procedures/200%20-%20Running%20Your%20First%20Job).
-- Stuck on something this page did not cover? See [305 - Getting Help](https://github.com/Human-Augment-Analytics/HPC-Training/tree/main/procedures/300%20-%20Storage%2C%20Troubleshooting%20%26%20Support/305%20-%20Getting%20Help).
 
 > **PACE note:** This page is based on the PACE Orientation deck dated Spring 2026 (March 2026 update). Cluster availability, hardware, and access processes change over time, so confirm anything access- or hardware-specific against the [PACE website](https://pace.gatech.edu) or current KB documentation before relying on it for something time-sensitive.
